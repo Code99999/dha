@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drug Harm Awareness</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="nav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#prevalence">Stats</a></li>
+        <li><a href="#crime">Crime</a></li>
+        <li><a href="#effects">Effects</a></li>
+        <li><a href="#rehab">Rehab</a></li>
+        <li><a href="#prevention">Prevention</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="section">
+      <h1>Drug Harm Awareness</h1>
+      <p>Substance abuse is a growing crisis, especially among youth. In 2020, 40.3 million people in the U.S. suffered from substance use disorders. Over 107,000 deaths were reported in 2021, largely due to fentanyl overdoses.</p>
+      <div class="alert">Every pill can be a trap. Choose life over addiction.</div>
+      <button onclick="scrollToSection('prevalence')">Learn More</button>
+    </section>
+
+    <section id="prevalence" class="section">
+      <h2>Prevalence & Death Rates</h2>
+      <div class="interactive-box">
+        <p>1 in every 7.5 Americans had a substance use disorder in 2020. Drug deaths continue to rise, with fentanyl being the most common cause.</p>
+        <ul>
+          <li>107,000+ deaths in 2021</li>
+          <li>2.75% of all US deaths caused by overdose</li>
+          <li>Highest overdose rates among Black and Native American/Alaska Native populations</li>
+        </ul>
+        <canvas id="chart1"></canvas>
+      </div>
+    </section>
+
+    <section id="crime" class="section">
+      <h2>Drug Use, Crime & Suicide</h2>
+      <p>Substance use contributes heavily to crime and mental health crises.</p>
+      <ul>
+        <li>60% of prisoners were using drugs during their crime</li>
+        <li>64% of homicides linked to drugs</li>
+        <li>80% of inmates abuse drugs or alcohol</li>
+        <li>75% of suicides involve substances</li>
+      </ul>
+      <div class="alert">Drugs don’t just end lives — they destroy futures.</div>
+    </section>
+
+    <section id="effects" class="section">
+      <h2>Physical & Mental Effects</h2>
+      <p>Drug use damages the body and mind severely, especially in younger users.</p>
+      <ul>
+        <li>High blood pressure, strokes, seizures</li>
+        <li>Organ failure, memory loss, hallucinations</li>
+        <li>Permanent brain damage, paranoia, mood swings</li>
+        <li>Linked to psychosis and schizophrenia, especially in young males using cannabis</li>
+      </ul>
+      <div class="alert">Addiction doesn’t care who you are — it always takes more than it gives.</div>
+    </section>
+
+    <section id="rehab" class="section">
+      <h2>Recovery & Rehabilitation</h2>
+      <div class="interactive-box">
+        <p>Recovery is possible but requires commitment and time.</p>
+        <ul>
+          <li>40–60% relapse after completing rehab</li>
+          <li>Less than 43% complete rehab programs</li>
+          <li>3+ months of treatment yields the best results</li>
+          <li>Recovery leads to lower criminal behavior and improved life quality</li>
+        </ul>
+        <canvas id="chart2"></canvas>
+      </div>
+    </section>
+
+    <section id="prevention" class="section">
+      <h2>Prevention & Education</h2>
+      <p>Education is the strongest defense against drug abuse.</p>
+      <ul>
+        <li>Community and family-based prevention efforts work</li>
+        <li>Education empowers informed decision-making</li>
+        <li>US spends ~$1 billion/year on prevention vs. $29 trillion GDP</li>
+      </ul>
+      <div class="alert">Education saves lives. Spread the truth. Stop the harm.</div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Drug Harm Awareness Initiative</p>
+  </footer>
+</body>
+</html>

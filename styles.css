@@ -1,0 +1,139 @@
+/* styles.css */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: radial-gradient(circle at top left, #f9f9f9, #ddd);
+  color: #222;
+  transition: background 0.3s, color 0.3s;
+  background-attachment: fixed;
+}
+body.dark {
+  background: radial-gradient(circle at top right, #121212, #1a1a1a);
+  color: #f5f5f5;
+}
+body.dark .section {
+  background: #1e1e1e;
+  color: #f5f5f5;
+}
+body.dark .alert {
+  background-color: #662222;
+  border-left-color: #e74c3c;
+  color: #fff;
+}
+header {
+  background: #111;
+  padding: 1rem 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+.nav a:hover {
+  color: #f39c12;
+}
+.nav-toggle {
+  display: none;
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  font-size: 1.25rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 1rem auto;
+}
+.nav.mobile {
+  flex-direction: column;
+  gap: 1rem;
+  display: none;
+}
+.nav.mobile.show {
+  display: flex;
+}
+main {
+  padding: 2rem;
+}
+.section {
+  padding: 4rem 2rem;
+  background: white;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+.section.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+}
+button:hover {
+  background-color: #c0392b;
+}
+.interactive-box {
+  background-color: #fef7e0;
+  border-left: 4px solid #f39c12;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+.alert {
+  background-color: #ffe4e1;
+  border-left: 5px solid #e74c3c;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #c0392b;
+}
+canvas {
+  max-width: 100%;
+  height: auto;
+  margin-top: 2rem;
+  display: block;
+}
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.875rem;
+}
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+  }
+  .nav {
+    display: none;
+  }
+  .section {
+    padding: 2rem 1rem;
+  }
+}
